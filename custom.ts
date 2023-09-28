@@ -8,7 +8,7 @@
  * projectleaf
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace projectleaf {
+namespace biotechnology {
     //% block
     export enum ChemicalColor {
     C = 1,
