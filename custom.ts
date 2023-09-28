@@ -5,10 +5,10 @@
 */
 
 /**
- * RefineChemicals
+ * projectleaf
  */
 //% weight=100 color=#0fbc11 icon=""
-namespace refinechemicals {
+namespace projectleaf {
     //% block
     export enum ChemicalColor {
     C = 1,
