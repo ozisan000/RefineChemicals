@@ -47,7 +47,7 @@ namespace biotechnology {
     /**
     * TODO: ブルー
     */
-    //% block
+
     export function B() {
         return 3
     }
@@ -55,7 +55,7 @@ namespace biotechnology {
     /**
     * TODO: グリーン
     */
-    //% block
+
     export function G() {
         return 5
     }
@@ -63,7 +63,7 @@ namespace biotechnology {
     /**
     * TODO: レッド
     */
-    //% block
+
     export function R() {
         return 6
     }
@@ -71,7 +71,7 @@ namespace biotechnology {
     /**
     * TODO: ブラック
     */
-    //% block
+
     export function K() {
         return 7
     }
