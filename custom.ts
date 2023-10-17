@@ -25,7 +25,7 @@ namespace biotechnology {
     */
     //% block
     export function C(){
-        return ChemicalColor.C
+        return 1
     }
 
     /**
@@ -33,7 +33,7 @@ namespace biotechnology {
     */
     //% block
     export function M() {
-        return ChemicalColor.M
+        return 2
     }
 
     /**
@@ -41,7 +41,7 @@ namespace biotechnology {
     */
     //% block
     export function Y() {
-        return ChemicalColor.Y
+        return 4
     }
 
     /**
@@ -49,7 +49,7 @@ namespace biotechnology {
     */
     //% block
     export function B() {
-        return ChemicalColor.B
+        return 3
     }
 
     /**
@@ -57,7 +57,7 @@ namespace biotechnology {
     */
     //% block
     export function G() {
-        return ChemicalColor.G
+        return 5
     }
 
     /**
@@ -65,7 +65,7 @@ namespace biotechnology {
     */
     //% block
     export function R() {
-        return ChemicalColor.R
+        return 6
     }
 
     /**
@@ -73,7 +73,7 @@ namespace biotechnology {
     */
     //% block
     export function K() {
-        return ChemicalColor.K
+        return 7
     }
 
     let lockPos = world(-5, -14, 23)
