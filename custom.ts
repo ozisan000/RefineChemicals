@@ -108,6 +108,7 @@ namespace biotechnology {
         if (initFlag == false) {
             initFlag = true
             blocks.place(REDSTONE_BLOCK, world(4, -2, 16))
+            blocks.place(AIR, world(4, -2, 16))
         }
         player.say(">>薬品の抽出を開始します")
         let a_result = !DischargePipe(a, 1)
@@ -118,7 +119,6 @@ namespace biotechnology {
         }
 
         player.say(">>薬品の抽出完了")
-        blocks.place(AIR, world(4, -2, 16))
         return a + b
     }
 
@@ -150,7 +150,7 @@ namespace biotechnology {
 
         } else {
             player.say(">>***薬品を注入することができません***")
-            blocks.place(REDSTONE_BLOCK, lockPos)
+            //blocks.place(REDSTONE_BLOCK, lockPos)
             return
         }
 
