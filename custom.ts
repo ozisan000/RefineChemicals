@@ -10,7 +10,7 @@
 //% weight=100 color=#191970 icon=""
 namespace biotechnology {
     //% block
-    export enum ChemicalColor {
+    enum ChemicalColor {
     C = 1,
     M = 2,
     Y = 4,
@@ -20,30 +20,58 @@ namespace biotechnology {
     K = 7
     }
 
+    /**
+    * TODO: シアン
+    */
+    //% block
     export function C(){
         return ChemicalColor.C
     }
 
+    /**
+    * TODO: マゼンタ
+    */
+    //% block
     export function M() {
         return ChemicalColor.M
     }
 
+    /**
+    * TODO: イエロー
+    */
+    //% block
     export function Y() {
         return ChemicalColor.Y
     }
 
+    /**
+    * TODO: ブルー
+    */
+    //% block
     export function B() {
         return ChemicalColor.B
     }
 
+    /**
+    * TODO: グリーン
+    */
+    //% block
     export function G() {
         return ChemicalColor.G
     }
 
+    /**
+    * TODO: レッド
+    */
+    //% block
     export function R() {
         return ChemicalColor.R
     }
 
+    /**
+    * TODO: ブラック
+    */
+    //% block
     export function K() {
         return ChemicalColor.K
     }
