@@ -19,7 +19,6 @@ namespace biotechnology {
     R = 6,
     K = 7
     }
-
     /**
     * TODO: シアン
     */
@@ -45,6 +44,8 @@ namespace biotechnology {
     }
     let lockPos = world(-5, -14, 23)
     let putPos = world(1, 1, 14)
+
+    let initFlag = false
 
     //パイプの押し出し処理
     function DischargePipe(chem: number, cnt: number): boolean {
@@ -85,7 +86,6 @@ namespace biotechnology {
         } else if (chem < 0 || chem > 2) {
             return false
         }
-
         return true
     }
 
@@ -98,7 +98,10 @@ namespace biotechnology {
             player.say(">>***システムロック中***")
             return -2
         }
-
+        if (initFlag == false) {
+            initFlag = true
+            blocks.place(REDSTONE_BLOCK, world(4, -2, 16))
+        }
         player.say(">>薬品の抽出を開始します")
         let a_result = !DischargePipe(a, 1)
         let b_result = !DischargePipe(b, 2)
@@ -108,6 +111,7 @@ namespace biotechnology {
         }
 
         player.say(">>薬品の抽出完了")
+        blocks.place(AIR, world(4, -2, 16))
         return a + b
     }
 
