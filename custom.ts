@@ -43,39 +43,6 @@ namespace biotechnology {
     export function Y() {
         return 4
     }
-
-    /**
-    * TODO: ブルー
-    */
-
-    export function B() {
-        return 3
-    }
-
-    /**
-    * TODO: グリーン
-    */
-
-    export function G() {
-        return 5
-    }
-
-    /**
-    * TODO: レッド
-    */
-
-    export function R() {
-        return 6
-    }
-
-    /**
-    * TODO: ブラック
-    */
-
-    export function K() {
-        return 7
-    }
-
     let lockPos = world(-5, -14, 23)
     let putPos = world(1, 1, 14)
 
