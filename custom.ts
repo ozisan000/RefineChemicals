@@ -50,36 +50,43 @@ namespace biotechnology {
     //パイプの押し出し処理
     function DischargePipe(chem: number, cnt: number): boolean {
         if (chem == ChemicalColor.C) {
-            player.say(">> " + cnt + "/2 " + "抽出中.")
-            blocks.place(CYAN_STAINED_GLASS, world(4, 3, 21))
+            let placePos = world(4, 3, 21)
+            player.say(">> " + cnt + "回目" + "抽出中.")
+            blocks.fill(CYAN_STAINED_GLASS, placePos, placePos,FillOperation.Replace)
             //  デバッグ用
             loops.pause(500)
-            player.say(">> " + cnt + "/2 " + "抽出中..")
-            blocks.place(CYAN_STAINED_GLASS, world(4, 4, 21))
+            player.say(">> " + cnt + "回目" + "抽出中..")
+            placePos = world(4, 4, 21)
+            blocks.fill(CYAN_STAINED_GLASS, placePos, placePos, FillOperation.Replace)
             //  デバッグ用
             loops.pause(500)
-            player.say(">> " + cnt + "/2 " + "抽出中...")
-            blocks.place(CYAN_STAINED_GLASS, world(4, 4, 20))
+            player.say(">> " + cnt + "回目" + "抽出中...")
+            placePos = world(4, 4, 20)
+            blocks.fill(CYAN_STAINED_GLASS, placePos, placePos, FillOperation.Replace)
             //  デバッグ用
             loops.pause(500)
 
         } else if (chem == ChemicalColor.M) {
-            player.say(">> " + cnt + "/2 " + "抽出中.")
-            blocks.place(MAGENTA_STAINED_GLASS, world(4, 3, 17))
+            player.say(">> " + cnt + "回目" + "抽出中.")
+            let placePos = world(4, 3, 17)
+            blocks.fill(MAGENTA_STAINED_GLASS, placePos, placePos, FillOperation.Replace)
             //  デバッグ用
             loops.pause(500)
-            player.say(">> " + cnt + "/2 " + "抽出中..")
-            blocks.place(MAGENTA_STAINED_GLASS, world(4, 4, 17))
+            player.say(">> " + cnt + "回目" + "抽出中..")
+            placePos = world(4, 4, 17)
+            blocks.fill(MAGENTA_STAINED_GLASS, placePos, placePos, FillOperation.Replace)
             //  デバッグ用
             loops.pause(500)
-            player.say(">> " + cnt + "/2 " + "抽出中...")
-            blocks.place(MAGENTA_STAINED_GLASS, world(4, 4, 18))
+            player.say(">> " + cnt + "回目" + "抽出中...")
+            placePos = world(4, 4, 18)
+            blocks.fill(MAGENTA_STAINED_GLASS, placePos, placePos, FillOperation.Replace)
             //  デバッグ用
             loops.pause(500)
 
         } else if (chem == ChemicalColor.Y) {
-            player.say(">> " + cnt + "/2 " + "抽出中...")
-            blocks.place(YELLOW_STAINED_GLASS, world(4, 3, 19))
+            player.say(">> " + cnt + "回目" + "抽出中...")
+            let placePos = world(4, 3, 19)
+            blocks.fill(YELLOW_STAINED_GLASS, placePos, placePos, FillOperation.Replace)
             //  デバッグ用
             loops.pause(500)
 
