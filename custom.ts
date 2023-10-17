@@ -20,6 +20,34 @@ namespace biotechnology {
     K = 7
     }
 
+    export function C(){
+        return ChemicalColor.C
+    }
+
+    export function M() {
+        return ChemicalColor.M
+    }
+
+    export function Y() {
+        return ChemicalColor.Y
+    }
+
+    export function B() {
+        return ChemicalColor.B
+    }
+
+    export function G() {
+        return ChemicalColor.G
+    }
+
+    export function R() {
+        return ChemicalColor.R
+    }
+
+    export function K() {
+        return ChemicalColor.K
+    }
+
     let lockPos = world(-5, -14, 23)
     let putPos = world(1, 1, 14)
 
